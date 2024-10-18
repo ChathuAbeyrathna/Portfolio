@@ -1,0 +1,337 @@
+/* Apply the background image to the entire body */
+body {
+    margin-top: 20px;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Makes sure the background stays fixed while scrolling */
+    font-family: 'Roboto', serif; /* Use a Google Font for a nice look */
+}
+
+/* Additional custom styles, animations, and overrides */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animation */
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .bounce-in {
+    animation: bounceIn 1s ease-out;
+  }
+
+  @keyframes slideInRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 1s ease-out;
+  }
+
+
+/* Custom Image and Icon Sizes */
+.w-64 {
+    width: 16rem;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+/* Border and Shadow for Image */
+.border-blue-700 {
+    border-color: #2c3e50;
+}
+
+.shadow-lg {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Default styling for the nav items */
+.nav-item {
+    position: relative;
+    padding-bottom: 5px; /* Adjust padding for spacing between text and underline */
+    text-align: center; /* Center align text within the item */
+}
+
+.nav-item:hover {
+    color: #1e3a8a;
+
+}
+
+/* Underline for active item with gradient and animation */
+.nav-item:after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Position the underline below the text */
+    left: 0;
+    width: 0%;
+    height: 4px; /* Thickness of the underline */
+    background: linear-gradient(to right, #4a90e2, #9013fe); /* Gradient color */
+    transition: .3s; /* Animation for smooth effect */
+}
+
+/* On hover, underline appears with animation */
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* For the active item, keep the underline visible */
+.nav-item.active::after {
+    width: 100%;
+}
+
+/* Center align text and button section */
+.text-center {
+    text-align: center;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.pr-8 {
+    padding-right: 2rem;
+}
+
+.text-9xl {
+    font-size: 6rem; /* Very large text size */
+}
+
+.text-5xl {
+    font-size: 3rem; /* Large but smaller than Hello */
+}
+
+.text-5xl span{
+    color: #1e3a8a;
+}
+
+.text-3xl {
+    font-size: 1.5rem; /* Medium size for the paragraph */
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #1e3a8a, #2b6cb0);
+}
+
+.hover\:bg-gradient-to-l:hover {
+    background: linear-gradient(to left, #2b6cb0, #1e3a8a);
+}
+
+.hover\:from-blue-700:hover {
+    background-color: #2b6cb0;
+}
+
+.hover\:to-blue-900:hover {
+    background-color: #1e3a8a;
+}
+
+.rounded {
+    border-radius: 0.375rem;
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.space-x-6 {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.space-x-6 > * {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+        opacity: 5;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 5;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 5;
+    }
+}
+
+.animate-slide {
+    display: inline-block;
+    animation: slide 9s linear infinite;
+    white-space: nowrap; /* Keeps the text on one line */
+}
+
+/* Styles for the modal overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Centering the modal content */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('Background.png'); /* Path to your image */
+    background-size: cover; /* Cover the entire modal area */
+    background-position: center; /* Center the image */
+    padding: 30px; /* Increased padding for more space */
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #888;
+    width: 90%; /* Increased width for more space */
+    max-width: 1500px; /* Larger max width */
+    height: auto; /* Height auto to adjust with content */
+    max-height: 90vh; /* Limit height for scrolling */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow */
+    z-index: 1001; /* Ensure the content is above the background */
+    text-align: center;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Styles for the close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 32px; /* Increased size for better visibility */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Decreased title size */
+.modal-title {
+    font-size: 2rem; /* Slightly decreased size */
+    margin-bottom: 20px; /* Increased space below the title */
+}
+
+/* Styles for the image */
+.modal-image {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 100%; /* Adjust width as needed */
+    max-width: 400px; /* Max width to prevent overly large images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Optional: rounded corners */
+    margin-bottom: 20px;
+}
+
+/* Blur effect for the background behind the modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: 999;
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Hide elements by default */
+.hidden {
+    display: none;
+}
+
+
+/* Hide the checkbox by default */
+#menu-toggle:checked ~ #menu {
+    transform: translateX(-50%);
+}
+
+/* Mobile menu styles */
+#menu {
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    /* Ensure the menu width is appropriate */
+    width: 250px; /* Adjust width as needed */
+}
+
+/* Adjustments for mobile menu toggle */
+label {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Adjust size as needed */
+    z-index: 20; /* Ensure the menu toggle is above the menu */
+    position: absolute;
+    left: 20px; /* Adjust from the left as needed */
+    top: 0; /* Move the icon higher up */
+    /* Adjust this value to move the icon higher */
+}
+
+.material-icons {
+    font-size: 24px; /* Adjust size as needed */
+}
+
+/* Ensure menu is displayed in mobile view */
+@media (min-width: 1024px) {
+    #menu {
+        display: flex;
+        transform: translateX(0);
+        width: auto; /* Ensure width adjusts for desktop */
+    }
+
+    label {
+        display: none;
+    }
+}

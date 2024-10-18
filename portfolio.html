@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chathurya Abeyrathne Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="relative flex items-center p-6 w-full z-10 bg-transparent mt-10 mr-16 lg:mr-20">
+    <input type="checkbox" id="menu-toggle" class="hidden" />
+    <label for="menu-toggle" class="cursor-pointer text-black flex items-center lg:hidden absolute right-6 top-6">
+        <span class="material-icons"><img src="menu.png" alt="Menu" class="h-6 md:h-8"></span>
+    </label>
+    <ul id="menu" class="hidden flex flex-col lg:flex-row space-y-4 lg:space-x-20 lg:space-y-0 lg:pr-20 lg:bg-transparent lg:static lg:relative absolute top-0 right-0 w-64 bg-white lg:w-auto lg:translate-x-0 transform translate-x-full transition-transform z-10">
+        <li class="nav-item text-black cursor-pointer active" data-target="home">Home</li>
+        <li class="nav-item text-black cursor-pointer" data-target="portfolio">Portfolio</li>
+        <li class="nav-item text-black cursor-pointer" data-target="projects">Projects</li>
+        <li class="nav-item text-black cursor-pointer" data-target="blogs">Blogs</li>
+        <li class="nav-item text-black cursor-pointer" data-target="skills">Skills</li>
+    </ul>
+</nav>
+
+
+<!-- Home Section -->
+<section id="home" class="flex flex-col md:flex-row items-center justify-between text-center p-4 md:p-8">
+
+    <div class="w-1/2 flex justify-center mb-50 bounce-in">
+        <img src="myimage.png" alt="Chathurya" class="md:w-900 h-auto">
+    </div>
+
+    <!-- Content Section -->
+    <div class="w-full md:w-1/2 text-center md:absolute md:right-0 md:pr-8 slide-in-right">
+        <h1 class="text-9xl mt-8 font-bold text-black">Hello...!</h1>
+        <h2 class="text-5xl mt-4 font-bold color-darkblue text-black">I am <span>Chathurya</span></h2>
+        <p class="text-3xl mt-2 text-black">Full-Stack Developer | UI/UX Designer | Graphic Designer</p>
+
+        <style>
+            .button-hover {
+              transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+            .button-hover:hover {
+              background-color: #1d4ed8; /* Darker blue for hover */
+              transform: scale(1.05);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            }
+        </style>
+          
+        <button id="hireMe" class="mr-0 md:mr-12 mt-8 mb-6 md:mb-10 px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded button-hover">Contact Me</button>
+          
+        <div class="flex space-x-4 md:space-x-5 mt-6 md:mt-10 justify-center mr-0 md:mr-12"> <!-- Adjust spacing here -->
+            <a href="https://www.linkedin.com/in/chathurya-abeyrathna-0888b9286/" target="_blank" class="flex items-center transition-transform transform hover:scale-110"><img src="linkedin.png" alt="LinkedIn" class="h-6 md:h-8"></a>
+            <a href="https://github.com/ChathuAbeyrathna" target="_blank" class="flex items-center transition-transform transform hover:scale-110"><img src="github.png" alt="GitHub" class="h-6 md:h-8"></a>
+            <a href="https://medium.com/@mrcdabey" class="flex items-center transition-transform transform hover:scale-110"><img src="medium.png" alt="medium" class="h-6 md:h-8"></a>
+            <a href="https://www.facebook.com/profile.php?id=100060824082385" target="_blank" class="flex items-center transition-transform transform hover:scale-110"><img src="facebook.png" alt="Facebook" class="h-6 md:h-8"></a>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="hidden mt-10 mb-20 flex items-center justify-center text-center relative bg-transparent">
+<div class="p-12 rounded-lg shadow-lg max-w-full w-full sm:w-11/12 md:w-10/12 lg:w-8/12 xl:w-8/12" style="background:linear-gradient(to right, #d6e3f3, #2b2eda80)">
+    <div class="relative mb-8">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-full bg-gradient-to-r from-darkBlue to-accentWhite p-2 animate-spin-slow mx-auto">
+                <img src="myimage.png" alt="Chathurya" class="w-full h-full rounded-full object-cover">
+            </div>
+        </div>
+        <h1 class="text-4xl sm:text-4xl md:text-5xl font-bold text-accentWhite leading-tight">Chathurya Dewmini Abeyrathna</h1>
+        
+        <div class="text-xl sm:text-2xl mt-4 mb-10 whitespace-nowrap overflow-hidden relative leading-relaxed">
+            <div class="animate-slide">
+                Software Engineering | Full-Stack Developer | UI/UX Designer | Graphic Designer
+            </div>
+        </div>
+        
+        <div class="text-base mt-2 text-center">
+            <p class="text-justify">
+                Welcome to My Portfolio! I am an undergraduate at the Faculty of Information Technology, University of Moratuwa,
+                 specializing in software engineering and full-stack development. With a passion for creating innovative solutions, 
+                 I have undertaken various projects that showcase my technical expertise and creativity.
+            </p>
+        
+            <h2 class="text-2xl font-semibold mt-4 mb-2">My Journey</h2>
+            <p class="text-justify">
+                My journey in software engineering involves developing dynamic web applications that effectively address real-world 
+                problems while ensuring an engaging user experience. Beyond my technical expertise, I have gained valuable professional 
+                experience that has shaped my growth.
+            </p>
+            <br>
+            <p class="text-justify">
+                As a Content Specialist and Data Analyst at AIESEC OGT, I developed engaging content for digital platforms, which significantly
+                 enhanced the organization’s online presence, while also analyzing data to inform strategic decisions. In addition, during my 
+                 one-year internship at People's Bank Head Office, I gained valuable experience in data entry and developed a strong understanding 
+                 of financial processes.
+            </p>
+            <br>
+            <p class="text-justify">
+                These experiences have honed my non-technical skills in leadership, teamwork, time management, and communication, 
+                which I’ve demonstrated through various roles and team projects. These soft skills complement my technical abilities, 
+                enabling me to contribute effectively in dynamic, collaborative environments.
+            </p>
+        
+            <h2 class="text-2xl font-semibold mt-4 mb-2">What Drives Me?</h2>
+            <p class="text-justify">
+                I am continuously expanding my knowledge in software engineering, driven by a passion for web technologies, design, 
+                and problem-solving. Whether I’m developing innovative web applications or collaborating on team projects, I strive 
+                to create solutions that are not only functional but also intuitive.
+            </p>
+        
+            <p class="text-justify mt-4">
+                Explore my work to see how I bring ideas to life through code! Let’s connect and build something great together.
+            </p>
+        </div>       
+
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="hidden flex items-center justify-center text-center">
+    <div class="p-8">
+        <h1 class="text-5xl font-bold">Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <!-- Project Boxes -->
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="portfolio.png" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Personal Portfolio</h2>
+                <p class="mt-1 text-base">Web Development - HTML, CSS, and JavaScript</p>
+                
+                <button onclick="openModal('portfolio-modal')" class="mt-12 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>            
+
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="acms.png" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Assistive Content Management System</h2>
+                <p class="mt-1 text-base">Web Development - MERN Stack</p>
+                
+                <button onclick="openModal('acms-modal')" class="mt-5 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>  
+            
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="E-Commerce.png" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">E-Commerce Website</h2>
+                <p class="mt-1 text-base">Web Development - MERN Stack</p>
+                
+                <button onclick="openModal('ecommerce-modal')" class="mt-12 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>  
+
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="Gamer.png" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Gamer Web App</h2>
+                <p class="mt-1 text-base">Web Development - React, SpringBoot, MongoDB</p>
+                
+                <button onclick="openModal('gamer-modal')" class="mt-6 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="TeachGuide.png" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">TeachWise</h2>
+                <p class="mt-1 text-base">UI UX Design - Figma</p>
+                
+                <button onclick="openModal('TeachWise-modal')" class="mt-11 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+            
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="travel.PNG" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Trivia Travels</h2>
+                <p class="mt-1 text-base">UI UX Design - Figma</p>
+                
+                <button onclick="openModal('travel-modal')" class="mt-11 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="portfolio-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('portfolio-modal')">&times;</span>
+        <h1 class="modal-title">Personal Portfolio</h1>
+        <img src="portfolio.png" alt="Portfolio Image" class="modal-image"> 
+        <div class="text-lg text-justify">
+            <p class="mb-4"> This personal portfolio is a web development project designed to showcase my skills, projects, and achievements. Developed using HTML, CSS, and JavaScript, the portfolio features a clean and modern design, emphasizing my expertise and professional journey.</p>
+            <div class="text-center mb-4">
+                <p><strong>Start Date: </strong>23 August 2024</p>
+                <p><strong>End Date: </strong>31 August 2024</p>
+            </div>
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/ChathuAbeyrathna" class="text-blue-500 hover:underline" target="_blank">https://github.com/ChathuAbeyrathna</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="acms-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('acms-modal')">&times;</span>
+        <h1 class="modal-title">Assistive Content Management System</h1>
+        <img src="acms.png" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4"> Developed a cutting-edge website using the MERN stack (MongoDB, Express.js, React, Node.js) specially crafted to empower child innovation and 
+                help electronic hobbyists in the IoT field. This website serves as a hub for creativity and learning, offering users a comprehensive library of resources, 
+                project showcases, and interactive features. With a focus on making complex IoT concepts accessible, this platform bridges the gap between knowledge and hands-on application, 
+                empowering young innovators to explore, collaborate, and contribute to the future of technology.</p>
+            <div class="text-center mb-4">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-900 text-center">🌟 Key Features:</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 text-justify mx-auto max-w-lg mb-8">
+                    <li>Google Authentication: Secure login via Google accounts.</li>
+                    <li>Language Translate: Content in multiple languages.</li>
+                    <li>Search Feature: Find information across all sections of the website.</li>
+                    <li>Resources: Library of standard information articles and downloads.</li>
+                    <li>Projects: Innovative project showcases with detailed insights.</li>
+                    <li>Blogs: Expert-written posts on the latest trends and topics.</li>
+                    <li>Shop: Integrated online shop for industry-related products.</li>
+                    <li>Forum: Vibrant community for discussions and idea sharing.</li>
+                    <li>Admin Panel: Manage content and settings efficiently.</li>
+                </ul>
+            </div>
+
+            <p>In this project, my contribution was the Resources and Search sections of a website using the MERN stack. For the Resources section, 
+                I developed a categorized library of articles and downloads, incorporating a rating system and interactive post cards to enhance user engagement. 
+                In the Search feature, I implemented a regex-based function to help users quickly find relevant posts, ensuring that only approved content is 
+                displayed in both the resources and project showcases.</p>
+
+            <div class="text-center mb-4">    
+                <p><strong>Start Date: </strong>29 July 2023</p>
+                <p><strong>End Date: </strong>8 July 2024</p>
+            </div>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/ChathuAbeyrathna" class="text-blue-500 hover:underline" target="_blank">https://github.com/ChathuAbeyrathna</a></li>
+                <li class="mb-2"><strong>LinkedIn Post:</strong> <a href="https://shorturl.at/VSUIq" class="text-blue-500 hover:underline" target="_blank">https://www.linkedin.com/posts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="ecommerce-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('ecommerce-modal')">&times;</span>
+        <h1 class="modal-title">E-Commerce Website</h1>
+        <img src="E-Commerce.png" alt="Portfolio Image" class="modal-image"> 
+        <div class="text-lg text-justify">
+            <p class="mb-4"> Currently developing a comprehensive e-commerce platform for a textile shop using the MERN stack (MongoDB, Express.js, React, Node.js)). 
+                This ongoing project aims to deliver a user-friendly interface with seamless product browsing and a secure payment gateway. 
+                It includes key features such as product management, customer reviews, order tracking, and inventory management, 
+                all designed to enhance the shopping experience for both customers and administrators. My role involves full-stack 
+                development, focusing on creating scalable and efficient solutions.
+            </p>
+            <div class="text-center mb-4">
+                <p><strong>Start Date: </strong>20 September 2024</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gamer-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('gamer-modal')">&times;</span>
+        <h1 class="modal-title">Gamer Web App</h1>
+        <img src="Gamer.png" alt="Portfolio Image" class="modal-image"> 
+        <div class="text-lg text-justify">
+            <p class="mb-4"> I am currently developing the GAMER Web App, an innovative platform designed for the 
+                gaming community, catering to gamers, streamers, developers, and bloggers. This interactive web 
+                application features real-time updates, a community chat for user interaction, and a tailored 
+                suggestion system to enhance user engagement. Built using Spring Boot for the backend and React.js 
+                for the frontend, this ongoing project focuses on creating a seamless and dynamic user experience. 
+                My goal is to foster a vibrant community where users can share insights, collaborate, and stay 
+                updated on the latest gaming trends while continuously improving the platform based on user feedback.
+            </p>
+            <div class="text-center mb-4">
+                <p><strong>Start Date: </strong>30 August 2024</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="TeachWise-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('TeachWise-modal')">&times;</span>
+        <h1 class="modal-title">TeachWise</h1>
+        <img src="TeachGuide.PNG" alt="Portfolio Image" class="modal-image"> 
+        <div class="text-lg text-justify">
+            <p class="mb-4"> This project features the UI/UX design for a Teacher Guide Website, aimed at creating an
+                 intuitive and engaging experience for educators. The design focuses on usability and aesthetic 
+                 appeal, ensuring that teachers can easily navigate the platform and access essential resources to 
+                 enhance their teaching methods.
+                 <br>
+            </p>
+            <p class="mb-4"> The project emphasizes user-centered design principles, such as clear navigation and 
+                responsive layouts, tailored to the specific needs of educators. Collaboration and creativity were 
+                key to delivering a design that supports professional development and fosters a better learning 
+                environment.
+                 <br>
+            </p>
+            <p>
+                Collaboration with my group members contributed significantly to the project, 
+                emphasizing creativity and a shared vision. This design exemplifies my commitment to user-centered 
+                design principles and my goal to support educators in their professional development.
+            </p>
+            <br>
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Figma:</strong> <a href="https://www.figma.com/design/stiknUusDtdDEfebR348fS/Protypes?node-id=0-1&t=9hSHh9kvnVcLGaWP-1" class="text-blue-500 hover:underline" target="_blank">https://www.figma.com/design/stiknUusDtdDEfebR348fS</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="travel-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('travel-modal')">&times;</span>
+        <h1 class="modal-title">TeachWise</h1>
+        <img src="travel.PNG" alt="Portfolio Image" class="modal-image"> 
+        <div class="text-lg text-justify">
+            <p class="mb-4"> In this project, my team and I created a UI/UX design of a Tourism app aimed at enhancing Sri Lanka’s
+                 tourism industry through a governmental solution. The app features essential functions like visa 
+                 processing and approval, providing users with a streamlined and efficient way to manage their visa 
+                 applications.
+                <br>
+            </p>
+            <p>
+                The design emphasizes usability and accessibility, ensuring a smooth experience for both tourists and
+                 authorities involved in the visa process. By integrating user-centered design principles, the 
+                 project addresses the need for an intuitive platform that simplifies complex tasks and improves 
+                 overall user interaction.
+                 <br>
+            </p>
+            <p>
+                This experience significantly enhanced my skills in Figma design and broadened my understanding of 
+                UI/UX principles, demonstrating how thoughtful design can effectively solve real-world challenges in 
+                the tourism sector.
+            </p>
+            <br>
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Figma:</strong> <a href="https://www.figma.com/design/xe6XNDLBpfyhtGrqydMoY8/TeamTrivia_TriviaTravels_Design?node-id=0-1&t=MwS6d9XiPOwlfOtN-1" class="text-blue-500 hover:underline" target="_blank">https://www.figma.com/design/xe6XNDLBpfyhtGrqydMoY8</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- Blogs Section -->
+<section id="blogs" class="hidden flex items-center justify-center text-center">
+    <div class="p-8">
+        <h1 class="text-5xl font-bold">Blogs</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <!-- blog Boxes -->
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="firstBlog.PNG" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Plant Detection IoT Systems</h2>
+                <p class="mt-1 text-base">Cultivating Tomorrow: The Enchanted World of Plant Detection IoT Systems</p>
+                
+                <button onclick="openModal('firstBlog-modal')" class="mt-6 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>  
+            
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="secBlog.jpeg" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Black Myth: Wukong</h2>
+                <p class="mt-1 text-base">Step into the World of Black Myth: Wukong</p>
+                
+                <button onclick="openModal('secBlog-modal')" class="mt-12 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+            
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="thirdBlog.png" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Coding Journey</h2>
+                <p class="mt-1 text-base">The Joy of the Coding Journey</p>
+                
+                <button onclick="openModal('thirdBlog-modal')" class="mt-12 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="oop.PNG" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">OOP Concepts</h2>
+                <p class="mt-1 text-base">Exploring OOP Concepts Through Gaming</p>
+                
+                <button onclick="openModal('oop-modal')" class="mt-12 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="DSA.png" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Data Structures and Algorithms</h2>
+                <p class="mt-1 text-base">How Data Structures and Algorithms Power Our Digital World</p>
+                
+                <button onclick="openModal('DSA-modal')" class="mt-6 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="COC.PNG" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">Clash of Clans</h2>
+                <p class="mt-1 text-base">The Art of Strategy and Construction in Clash of Clans</p>
+                
+                <button onclick="openModal('COC-modal')" class="mt-6 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+
+            <div class="border p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 m-4" style="height: 320px; width: 360px; background:linear-gradient(to right, #d6e3f3, #2b2eda80); /* Dark blue color with transparency */">
+                <img src="life.PNG" alt="Project" class="w-full h-32 object-cover rounded-t-lg">
+                <h2 class="text-xl font-bold mt-3">From Gaming to Coding</h2>
+                <p class="mt-1 text-base">From Gaming Glory to Coding Chaos: A Comedy of Errors</p>
+                
+                <button onclick="openModal('life-modal')" class="mt-6 px-4 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-500 transition duration-300">
+                    View More
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="firstBlog-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('firstBlog-modal')">&times;</span>
+        <h1 class="modal-title">Plant Detection IoT Systems</h1>
+        <img src="firstBlog.PNG" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4"> In the realm of modern horticulture, the integration of smart devices and the Internet of Things (IoT) has revolutionized how we cultivate and manage plants. This post delves into the innovative world of plant-detection IoT systems, which enable seamless monitoring and 
+                control of your plants from virtually anywhere. By leveraging advanced sensors, high-resolution cameras, and sophisticated artificial intelligence (AI), these systems can identify plant issues in real time and optimize growing conditions. This not only conserves resources such as water 
+                and time but also enhances plant health and yield, ultimately saving both money and effort.</p>
+
+            <p class="mb-4"> In addition to exploring practical applications, I will also review some cutting-edge research in this field. Key studies include "IoT Smart Plant Monitoring, Watering, and Security System," "Plant Diseases and Pests Detection Based on Deep Learning: A Review," and "IoT-Based Air Quality 
+                Monitoring for Agriculture." These papers provide valuable insights into the advancements and future directions of smart plant care technologies.</p>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Blog Post:</strong> <a href="https://plantdetectioniotsyestem.wordpress.com/2023/09/17/cultivating-tomorrow-the-enchanted-world-of-plant-detection-iot-systems/" class="text-blue-500 hover:underline" target="_blank">https://plantdetectioniotsyestem.wordpress.com</a></li>
+                <li class="mb-2"><strong>LinkedIn Post:</strong> <a href="https://shorturl.at/mvJ9V" class="text-blue-500 hover:underline" target="_blank">https://www.linkedin.com/posts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="secBlog-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('secBlog-modal')">&times;</span>
+        <h1 class="modal-title">Step into the World of Black Myth: Wukong</h1>
+        <img src="secBlog.jpeg" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4"> In the ever-evolving landscape of gaming, few titles have generated as much excitement as
+                 Black Myth: Wukong. This action RPG is not just another entry in the genre; it promises to redefine 
+                 our expectations of what video games can achieve. Based on the classic Chinese tale, Journey to the 
+                 West, the game follows the legendary Sun Wukong, also known as the Monkey King, as he navigates a 
+                 vibrant world filled with mythical creatures and powerful adversaries.</p>
+
+            <p class="mb-4">What sets Black Myth: Wukong apart is its ability to blend stunning visuals with engaging
+                 gameplay and a rich narrative. From jaw-dropping graphics powered by Unreal Engine 5 to a combat 
+                 system that challenges players to think strategically, this game aims to deliver an experience that 
+                 resonates with both casual gamers and hardcore enthusiasts. As I delve into the intricacies of this 
+                 title, I will explore its visual storytelling, gameplay mechanics, and the cultural significance it 
+                 brings to the gaming community.</p>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Blog Post:</strong> <a href="https://medium.com/@mrcdabey/step-into-the-world-of-black-myth-wukong-303b722a317c" class="text-blue-500 hover:underline" target="_blank">https://medium.com/step-into-the-world-of-black-myth-wukong</a></li>
+                <li class="mb-2"><strong>LinkedIn Post:</strong> <a href="https://www.linkedin.com/posts/chathurya-abeyrathna-0888b9286_step-into-the-world-of-black-myth-wukong-activity-7246932733950623744-DOen?utm_source=share&utm_medium=member_desktop" class="text-blue-500 hover:underline" target="_blank">https://www.linkedin.com/posts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="thirdBlog-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('thirdBlog-modal')">&times;</span>
+        <h1 class="modal-title">The Joy of the Coding Journey</h1>
+        <img src="thirdBlog.png" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4"> Coding transcends mere technical skills; it embodies a transformative journey filled 
+                with exploration, creativity, and continuous learning. For anyone who has ventured into the world 
+                of programming, this path presents not only challenges but also immense satisfaction. From the 
+                initial thrill of writing your first line of code to the countless “aha” moments that come with 
+                solving complex problems, the experience of coding is both enriching and rewarding.</p>
+
+            <p class="mb-4">In this blog, we will delve into the various aspects of the coding journey, exploring the
+                 excitement of discovery, the importance of perseverance, and the joy of collaboration within the 
+                 developer community. Whether you’re a beginner just starting out or a seasoned programmer, this 
+                 journey is about embracing the process, celebrating small wins, and continually evolving as a coder.
+                </p>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Blog Post:</strong> <a href="https://medium.com/@mrcdabey/the-joy-of-the-coding-journey-464e4fc332b4" class="text-blue-500 hover:underline" target="_blank">https://medium.com/the-joy-of-the-coding-journey</a></li>
+                <li class="mb-2"><strong>LinkedIn Post:</strong> <a href="https://www.linkedin.com/posts/chathurya-abeyrathna-0888b9286_the-joy-of-the-coding-journey-activity-7247910201729712128-cp4N?utm_source=share&utm_medium=member_desktop" class="text-blue-500 hover:underline" target="_blank">https://www.linkedin.com/posts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="oop-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('oop-modal')">&times;</span>
+        <h1 class="modal-title">Exploring OOP Concepts Through Gaming</h1>
+        <img src="oop.PNG" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4">Object-Oriented Programming (OOP) is a cornerstone of modern software development, 
+                providing a powerful framework for creating modular, reusable, and scalable code. But how can we 
+                truly grasp its fundamental principles—Encapsulation, Inheritance, Polymorphism, and Abstraction? 
+                One effective approach is to explore these concepts through the lens of popular video games that 
+                many of us know and love.</p>
+
+            <p class="mb-4">In this blog post, we will dive into familiar gaming experiences to illustrate how OOP 
+                principles shape the mechanics and structures of our favorite titles. From the unique attributes of 
+                characters in The Sims to the complex relationships between Pokémon in the iconic franchise, we’ll 
+                uncover how these principles enhance gameplay and contribute to the overall design of the games we enjoy.
+            </p>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Blog Post:</strong> <a href="https://medium.com/@mrcdabey/exploring-oop-concepts-through-gaming-792d0814ede8" class="text-blue-500 hover:underline" target="_blank">https://medium.com/exploring-oop-concepts-through-gaming</a></li>
+                <li class="mb-2"><strong>LinkedIn Post:</strong> <a href="https://www.linkedin.com/posts/chathurya-abeyrathna-0888b9286_exploring-oop-concepts-through-gaming-activity-7252011460451540992-gLTi?utm_source=share&utm_medium=member_desktop" class="text-blue-500 hover:underline" target="_blank">https://www.linkedin.com/posts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="DSA-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('DSA-modal')">&times;</span>
+        <h1 class="modal-title">How Data Structures and Algorithms Power Our Digital World</h1>
+        <img src="DSA.png" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4">In today’s tech-driven society, the seamless interactions we experience across social 
+                media, gaming, and various applications are underpinned by two essential components: data structures 
+                and algorithms. These foundational elements serve as the backbone of software development, enabling 
+                efficient data management and problem-solving capabilities. But how exactly do they function in the 
+                background to make our digital lives easier?</p>
+
+            <p class="mb-4">In this blog post, we’ll explore the significance of data structures and algorithms, 
+                demystifying their roles through relatable analogies and real-world examples. From organizing data 
+                efficiently to implementing step-by-step solutions for complex problems, these concepts are vital for 
+                anyone looking to understand the mechanics behind our favorite technologies.
+            </p>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Blog Post:</strong> <a href="https://medium.com/@mrcdabey/how-data-structures-and-algorithms-power-our-digital-world-8817e89bb87a" class="text-blue-500 hover:underline" target="_blank">https://medium.com/how-data-structures-and-algorithms-power-our-digital-world</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="COC-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('COC-modal')">&times;</span>
+        <h1 class="modal-title">The Art of Strategy and Construction in Clash of Clans</h1>
+        <img src="COC.PNG" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4">Since its release in 2012, Clash of Clans, developed by Supercell, has captured the 
+                attention of millions of players worldwide. With its perfect blend of strategic base-building, 
+                tactical combat, and cooperative clan gameplay, this mobile gaming phenomenon has maintained its 
+                popularity for over a decade. Whether you’re a new player or a seasoned veteran, Clash of Clans 
+                offers an engaging and complex experience that continues to evolve with each update.</p>
+
+            <p class="mb-4">In this blog, we’ll dive into the key aspects that make Clash of Clans so captivating — 
+                from the intricacies of base-building to the dynamic combat mechanics, RPG-style progression, and the
+                 importance of clans. We’ll also explore how constant updates and evolving strategies keep the game 
+                 fresh and exciting, making it a favorite among casual players and competitive strategists alike.
+            </p>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Blog Post:</strong> <a href="https://medium.com/@mrcdabey/the-art-of-strategy-and-construction-in-clash-of-clans-09f7f9691af2" class="text-blue-500 hover:underline" target="_blank">https://medium.com/the-art-of-strategy-and-construction-in-clash-of-clans</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="life-modal" class="modal hidden">
+    <div class="modal-content relative">
+        <span class="close" onclick="closeModal('life-modal')">&times;</span>
+        <h1 class="modal-title">From Gaming Glory to Coding Chaos: A Comedy of Errors</h1>
+        <img src="life.PNG" alt="Portfolio Image" class="modal-image">
+        <div class="text-lg text-justify">
+            <p class="mb-4">What happens when a confident gamer decides to dive into the world of software engineering, 
+                thinking the skills earned in virtual worlds will easily translate to coding mastery? Spoiler alert: reality 
+                hits harder than the final boss in any RPG. In this blog, I recount my humorous and eye-opening journey from 
+                dominating video games to stumbling through my first coding classes, where I quickly realized there are no cheat 
+                codes, respawn points, or "Pause" buttons in real life.</p>
+
+            <p class="mb-4">From mistaking algorithms for gaming strategies to learning the hard way that debugging isn't 
+                as simple as fixing a glitch in a game, the transition has been anything but smooth. As I navigate through 
+                the complexities of coding and IT, I reflect on the sharp learning curve and the amusing reality check that 
+                comes with shifting from gaming glory to coding chaos.
+            </p>
+
+            <p class="font-semibold mb-2">Links:</p>
+            <ul class="list-none p-0">
+                <li class="mb-2"><strong>Blog Post:</strong> <a href="https://medium.com/@mrcdabey/from-gaming-glory-to-coding-chaos-a-comedy-of-errors-2904b3fe71bf" class="text-blue-500 hover:underline" target="_blank">https://medium.com/from-gaming-glory-to-coding-chaos</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<section id="skills" class="flex items-center justify-center text-center">
+    <div class="p-4 md:p-8 w-full max-w-6xl">
+        <h1 class="text-5xl font-bold mb-6 md:mb-12">My Skills</h1>
+        <div class="p-6 md:p-12 rounded-lg shadow-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" style="background: linear-gradient(to right, #d6e3f3, #2b2eda80);">
+            <!-- Skills Boxes -->
+            <div onclick="openModal('skill1-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">Software Development</h2>
+            </div>   
+
+            <div onclick="openModal('skill2-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">Web Development</h2>
+            </div>  
+            
+            <div onclick="openModal('skill3-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">Database Management</h2>
+            </div> 
+
+            <div onclick="openModal('skill4-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">IDE</h2>
+            </div> 
+
+            <div onclick="openModal('skill5-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">Version Controlling</h2>
+            </div> 
+
+            <div onclick="openModal('skill6-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">UI/UX Design</h2>
+            </div> 
+
+            <div onclick="openModal('skill7-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">Creative & Design</h2>
+            </div> 
+
+            <div onclick="openModal('skill8-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">Soft Skills</h2>
+            </div>
+            
+            <div onclick="openModal('skill9-modal')" class="border-2 border-blue-900 p-4 rounded-lg shadow-lg transform hover:scale-105 hover:bg-blue-100 hover:shadow-2xl transition duration-300 cursor-pointer bg-white" style="width: 100%;">
+                <h2 class="text-lg md:text-xl font-bold mt-3">Languages</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="skill1-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill1-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">Software Development</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>MERN Stack</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="skill2-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill2-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">Web Development</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Express.js</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skill3-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill3-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">Database Management</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>MongoDB</li>
+                    <li>MySql</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skill4-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill4-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">IDE</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>VS Code</li>
+                    <li>Net Beans</li>
+                    <li>Intelij IDEA</li>
+                    <li>PyCharm</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skill5-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill5-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">Version Controlling</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>GitHub</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skill6-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill6-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">UI/UX Design</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>Figma</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skill7-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill7-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">Creative & Design</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>GIMP</li>
+                    <li>Canva</li>
+                    <li>Blender</li>
+                    <li>Unity</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skill8-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill8-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">Soft Skills</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>Leadership Skills</li>
+                    <li>Team Work</li>
+                    <li>Time Management</li>
+                    <li>Communication</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skill9-modal" class="modal hidden">
+    <div class="modal-content relative" style="width: 90%; max-width: 500px; margin: auto;">
+        <span class="close" onclick="closeModal('skill9-modal')">&times;</span>
+        <h1 class="modal-title text-xl md:text-2xl">Languages</h1>
+        <div class="text-lg flex justify-center">
+                <ul class="list-disc list-inside text-gray-700 text-justify mx-auto mb-8">
+                    <li>Sinhala</li>
+                    <li>English</li>
+                    <li>German</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-8 mt-20">
+    <div class="container mx-auto text-center">
+        <p class="mb-2">© 2024 Chathurya Abeyrathna. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-4">
+            <a href="https://www.linkedin.com/in/chathuabeyrathna-0888b9286/" target="_blank" class="hover:text-gray-400">
+                <img src="linkedin.png" alt="LinkedIn" class="h-6 inline-block filter invert">
+            </a>
+            <a href="https://github.com/ChathuAbeyrathna" target="_blank" class="hover:text-gray-400">
+                <img src="github.png" alt="GitHub" class="h-6 inline-block filter invert">
+            </a>
+            <a href="https://medium.com/@mrcdabey" class="hover:text-gray-400">
+                <img src="medium.png" alt="Instagram" class="h-6 inline-block filter invert">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100060824082385" target="_blank" class="hover:text-gray-400">
+                <img src="facebook.png" alt="Facebook" class="h-6 inline-block filter invert">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+   <!-- Contact Popup -->
+<div id="contactPopup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-2xl transform scale-90 transition-all duration-300 ease-out">
+        <h2 class="text-3xl font-extrabold mb-6 text-center text-dark-blue border-b-4 border-dark-blue pb-4">
+            Contact Me
+        </h2>
+        <ul class="space-y-6 text-lg text-gray-700">
+            <li class="flex items-center space-x-4">
+                <!-- Improved Phone Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3.01c0 1.1-.9 2-2 2a19.937 19.937 0 01-8.94-2.36 19.937 19.937 0 01-6.58-6.58A19.937 19.937 0 012.07 4C2.07 2.9 2.97 2 4.07 2h3.01c.88 0 1.67.57 1.88 1.44l.62 2.54c.16.64-.02 1.31-.46 1.76l-2.2 2.2a15.978 15.978 0 006.58 6.58l2.2-2.2c.45-.45 1.12-.63 1.76-.46l2.54.62c.87.21 1.44 1 1.44 1.88z" />
+                </svg>
+                <span>Mobile: 074 1448599</span>
+            </li>
+            <li class="flex items-center space-x-4">
+                <!-- Improved Email Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 12h.01M21 16.8c0 .39-.28.68-.64.68H3.64a.7.7 0 01-.64-.68V5.2c0-.38.28-.68.64-.68H20.4c.36 0 .64.3.64.68v11.6zM3.6 5.8l8.4 5.7 8.4-5.7" />
+                </svg>
+                <span>Email: chathuryaabeyrathne2001@gmail.com</span>
+            </li>
+            <li class="flex items-center space-x-4">
+                <!-- Address Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13401 2 5 5.13401 5 9C5 13.858 12 21 12 21C12 21 19 13.858 19 9C19 5.13401 15.866 2 12 2ZM12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9C14.5 10.3807 13.3807 11.5 12 11.5Z" />
+                </svg>
+                <span>Address: No. 213/1/A, Kandaliyadda Paluwa, Ragama</span>
+            </li>
+        </ul>
+        <div class="flex justify-center mt-8">
+            <button type="button" id="cancelContact" class="p-3 px-12 bg-dark-blue text-white font-semibold rounded-full hover:bg-dark-blue-darker hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out">
+                OK
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Custom Dark Blue Theme */
+    :root {
+        --dark-blue: #1E3A8A;
+        --dark-blue-darker: #1A2E66;
+    }
+    .text-dark-blue {
+        color: var(--dark-blue);
+    }
+    .bg-dark-blue {
+        background-color: var(--dark-blue);
+    }
+    .hover\:bg-dark-blue-darker:hover {
+        background-color: var(--dark-blue-darker);
+    }
+</style>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
